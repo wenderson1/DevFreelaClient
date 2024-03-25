@@ -1,0 +1,16 @@
+.ld-button{
+    background-color: var(--ld-color-primary);
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.ld-button:hover{
+    background-color: var(--ld-color-primary-light);
+}
