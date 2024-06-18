@@ -1,13 +1,13 @@
-:root{
-    --ld-color-gray-light: #B8B7b7;
-    --ld-color-gray: #767684;
-    --ld-color-gray-dark: #09090A;
-    --ld-color-gray-lighter: #F9FBFB;
+:root {
+  --ld-color-gray-light: #b8b7b7;
+  --ld-color-gray: #767684;
+  --ld-color-gray-dark: #09090a;
+  --ld-color-gray-lighter: #f9fbfb;
 
-    --ld-color-blue: #0041BE;
-    
-    --ld-color-danger: #FF2222;
+  --ld-color-blue: #0041be;
 
-    --ld-color-primary-light: #004CD8;
-    --ld-color-primary: #0041BE;
+  --ld-color-danger: #ff2222;
+
+  --ld-color-primary-light: #004cd8;
+  --ld-color-primary: #0041be;
 }
