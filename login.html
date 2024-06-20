@@ -30,11 +30,13 @@
     <link rel="stylesheet" href="style/base/html.css" />
 
     <!-- OBJECTS -->
+    <link rel="stylesheet" href="style/objects/ld-wrapper.css" />
 
     <!-- COMPONENTS -->
     <link rel="stylesheet" href="style/components/ld-button.css" />
     <link rel="stylesheet" href="style/components/ld-input.css" />
     <link rel="stylesheet" href="style/components/ld-radio.css" />
+    <link rel="stylesheet" href="style/components/ld-header.css" />
 
     <!-- PAGES -->
     <link rel="stylesheet" href="style/pages/login.css" />
@@ -59,13 +61,38 @@
 
         <main class="main-content">
           <div class="left">
-            <!-- button class="ld-button">Continuar</button -->
-            <!--<input class="ld-input" placeholder="Título" /> -->
-            <label class="ld-radio">
-              Dev
-              <input type="radio" />
-              <span class="checkmark"></span>
-            </label>
+            <span class="steps">PASSO 1 DE 2</span>
+
+            <h1 class="main-title">
+              <span class="up">Olá!</span>
+              <span class="down">Vamos criar o seu cadastro,</span>
+            </h1>
+
+            <div class="radio-buttons">
+              <h3 class="title">Qual o seu perfil</h3>
+              <div class="buttons">
+                <label class="ld-radio">
+                  Dev
+                  <input name="cargo" type="radio" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="ld-radio">
+                  Cliente <input name="cargo" type="radio" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <input type="text" class="ld-input" placeholder="Nome Completo" />
+            <input
+              type="date"
+              class="ld-input"
+              placeholder="Data de Nascimento"
+            />
+            <input type="email" class="ld-input" placeholder="Email" />
+            <input type="password" class="ld-input" placeholder="Senha" />
+
+            <button class="ld-button">Continuar</button>
           </div>
           <div class="right">
             <img
