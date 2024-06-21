@@ -1,0 +1,49 @@
+.ld-table {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-color: white;
+  padding-top: 28px;
+}
+/* head */
+.ld-table > .head {
+  font-size: calc(var(--ld-font-size-base) + 6px);
+  font-weight: 600px;
+  color: var(--ld-color-gray-light);
+}
+
+.ld-table > .head > .row {
+  display: grid;
+  grid-template-columns: 2fr 200px 200px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Body */
+.ld-table > .body {
+}
+
+.ld-table > .body > .row {
+  display: grid;
+  padding: 24px 0px;
+  grid-template-columns: 2fr 200px 200px;
+  border-bottom: 1px solid var(--ld-color-gray);
+  padding-left: 32px;
+}
+
+/* Body - title description */
+.ld-table > .body > .row > .title-description {
+}
+
+.ld-table > .body > .row > .title-description > .title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.ld-table > .body > .row > .title-description > .description {
+}
+
+/* body - price */
+.ld-table > .body > .row > .price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
