@@ -4,6 +4,7 @@
 }
 
 .ld-wrapper > .main-content {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: var(--ld-header-size);
@@ -13,14 +14,10 @@
   grid-template-columns: 1fr;
 }
 
-.ld-wrapper > .main-content > .left {
-  padding-top: 48px;
-}
-
 .ld-wrapper > .main-content > .right {
   overflow: hidden;
   position: relative;
-  height: 100vh;
+  height: calc(100vh - var(--ld-header-size));
 }
 
 .ld-wrapper > .main-content > .right > .image {
@@ -30,4 +27,13 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.ld-wrapper > .main-content > .back-btn {
+  position: fixed;
+  top: calc(var(--ld-header-size) + 60px);
+  font-size: 40px;
+  cursor: pointer;
+  color: var(--ld-color-gray-dark);
+  text-decoration: none;
 }
