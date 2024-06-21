@@ -4,33 +4,39 @@
   background-color: white;
   padding-top: 28px;
 }
-/* head */
+
+/* HEAD */
+
 .ld-table > .head {
   font-size: calc(var(--ld-font-size-base) + 6px);
-  font-weight: 600px;
+  font-weight: 600;
   color: var(--ld-color-gray-light);
 }
 
 .ld-table > .head > .row {
   display: grid;
-  grid-template-columns: 2fr 200px 200px;
+  grid-template-columns: 2fr 1fr 200px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-/* Body */
+/* BODY */
+
 .ld-table > .body {
 }
 
 .ld-table > .body > .row {
   display: grid;
-  padding: 24px 0px;
-  grid-template-columns: 2fr 200px 200px;
-  border-bottom: 1px solid var(--ld-color-gray);
-  padding-left: 32px;
+  padding: 24px 32px;
+  grid-template-columns: 2fr 1fr 200px;
+  border-bottom: 1px solid var(--ld-color-gray-lighter);
 }
 
-/* Body - title description */
+.ld-table > .body > .row:last-child {
+  border-bottom: none;
+}
+
+/* BODY - TITLE-DESCRIPTION */
 .ld-table > .body > .row > .title-description {
 }
 
@@ -42,8 +48,22 @@
 .ld-table > .body > .row > .title-description > .description {
 }
 
-/* body - price */
+/* BODY - PRICE */
 .ld-table > .body > .row > .price {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+
+.ld-table > .body > .row > .actions {
+}
+
+.ld-table > .body > .row > .actions > .edit {
+  color: var(--ld-color-primary);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.ld-table > .body > .row > .actions > .delete {
+  color: var(--ld-color-danger);
+  cursor: pointer;
 }
